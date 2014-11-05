@@ -4,7 +4,7 @@ Partial Class _Default
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        lbl_Welcome.Text = "Welcome, it is now " & DateTime.Now.ToLongDateString & "."
+        lbl_Welcome.Text = "Welcome, it is now " & DateTime.Now.ToShortTimeString & "."
 
     End Sub
 

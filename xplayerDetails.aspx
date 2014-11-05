@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="playerDetails.aspx.vb" Inherits="playerDetails" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="xplayerDetails.aspx.vb" Inherits="playerDetails" %>
 
 <!DOCTYPE html>
 

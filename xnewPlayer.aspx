@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="newPlayer.aspx.vb" Inherits="detailsview" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="xnewPlayer.aspx.vb" Inherits="detailsview" %>
 
 <!DOCTYPE html>
 
@@ -61,7 +61,7 @@
                             <asp:TextBox ID="tb_TeamName" runat="server" Text='<%# Bind("TeamName") %>' />
                         </td>
                         <td>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter the Team Name" CssClass="validationError" ControlToValidate="tb_TeamName"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfv_TeamName" runat="server" ErrorMessage="Please Enter the Team Name" CssClass="validationError" ControlToValidate="tb_TeamName"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
@@ -80,7 +80,7 @@
                             <asp:TextBox ID="tb_KD" runat="server" Text='<%# Bind("KD") %>' />
                         </td>
                         <td>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter the Kill/Death Ratio" CssClass="validationError"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfv_KD" runat="server" ErrorMessage="Please Enter the Kill/Death Ratio" CssClass="validationError" ControlToValidate="tb_KD"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
