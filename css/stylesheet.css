@@ -1,2 +1,6 @@
 ﻿body {
 }
+
+.deletedPlayer {color:red; font-style:italic;}
+
+.validationError {color:red; font-weight:bold; }

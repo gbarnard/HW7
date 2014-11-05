@@ -7,4 +7,6 @@ Partial Class _Default
         lbl_Welcome.Text = "Welcome, it is now " & DateTime.Now.ToLongDateString & "."
 
     End Sub
+
+
 End Class
