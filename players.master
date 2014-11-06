@@ -4,17 +4,48 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+        </title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div id="container">
+
+        <div id="header">
+            <h1>MLG Stats!</h1>
+            <h3>Stats for your favorite Major League Gaming <br />
+                Call of Duty Players</h3>
+        </div>   
+        <div id="right_header">
+            <img src="./css/MLGDigitalLogo.jpg" height="150px" />
+        </div> 
+
+        <div id="menu">
+            <ul id="nav">
+                <li><a href="./Default.aspx">Home</a></li>
+                <li><a href="./aboutUs.aspx">About Us</a></li>
+                <li><a href="./contactUs.aspx">Contact Us</a></li>
+                <li><a href="./Search.aspx">Search</a></li>
+                <li><a href="./Admin.aspx">Login</a></li>
+                <li><a href="./newPlayer.aspx">New Player</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer">
+            &copy; 2014 MSCI:3300 - Software Design and Development
+        </div>
+
     </div>
+    
     </form>
 </body>
 </html>
