@@ -2,7 +2,7 @@
 Imports System.Net.Mail
 Imports System.Net
 
-Partial Class contact
+Partial Class contactUs
     Inherits System.Web.UI.Page
 
     Protected Sub btn_Send_Click(sender As Object, e As EventArgs) Handles btn_Send.Click
@@ -11,7 +11,7 @@ Partial Class contact
         Dim client As New SmtpClient
 
         msg.To.Add("michael-colbert@uiowa.edu") 'destionation email address
-        msg.From = New MailAddress(senderAddress.text) 'get the address from the textbox
+        msg.From = New MailAddress(senderEmail.Text) 'get the address from the textbox
         msg.Subject = "web contact form test" 'set the message subject line
         msg.Body = senderMessage.Text 'get the message body from the textbox
 
