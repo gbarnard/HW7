@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/players.master" AutoEventWireup="false" CodeFile="newPlayer.aspx.vb" Inherits="newPlayer" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Admin/AdminMasterPage.master" AutoEventWireup="false" CodeFile="newPlayer.aspx.vb" Inherits="newPlayer" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> Create a New Player
 </asp:Content>

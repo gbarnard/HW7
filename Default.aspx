@@ -3,9 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     Grant's MLG Stats Page
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server" >
 
-        <asp:Label ID="lbl_Welcome" runat="server"></asp:Label>
+        
         <asp:SqlDataSource ID="sql_MLGstats" runat="server" ConnectionString="<%$ ConnectionStrings:dbo.gbarnard_HW7_Data %>" 
             SelectCommand="SELECT * FROM [gbarnard_HW7_Data]" DeleteCommand="DELETE FROM [gbarnard_HW7_Data] WHERE [playerID] = @playerID" InsertCommand="INSERT INTO [gbarnard_HW7_Data] ([PLayerName], [TeamName], [PlayerRole], [KD], [DomCaps], [Slayer], [SND]) VALUES (@PLayerName, @TeamName, @PlayerRole, @KD, @DomCaps, @Slayer, @SND)" UpdateCommand="UPDATE [gbarnard_HW7_Data] SET [PLayerName] = @PLayerName, [TeamName] = @TeamName, [PlayerRole] = @PlayerRole, [KD] = @KD, [DomCaps] = @DomCaps, [Slayer] = @Slayer, [SND] = @SND WHERE [playerID] = @playerID">
             <DeleteParameters>
@@ -32,7 +32,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="playerID" DataSourceID="sql_MLGstats" AllowPaging="True" AllowSorting="True" Width="457px" horizontalalignment="center">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="playerID" DataSourceID="sql_MLGstats" AllowPaging="True" AllowSorting="True" Width="457px" HorizontalAlign="Center">
             <Columns>
                 <asp:BoundField DataField="PLayerName" HeaderText="Player Name" SortExpression="PLayerName" />
                 <asp:BoundField DataField="TeamName" HeaderText="Team Name" SortExpression="TeamName" />

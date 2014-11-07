@@ -15,7 +15,7 @@ h3 {font-family: Arial, helvetica, sans-serif; font-variant: small-caps;}
          color:white;
          padding:10px;
          margin:0 auto;
-         width:708px;
+         width:705px;
          height:150px;
          float:left;
          border-top:1px solid black;
@@ -73,6 +73,9 @@ h3 {font-family: Arial, helvetica, sans-serif; font-variant: small-caps;}
     color: red;
     background-color:white; }
 
+#GridView1 {text-align:center;}
+
+#contact {margin-left:auto; margin-right:auto;}
 
 .deletedPlayer {color:red; font-style:italic;}
 

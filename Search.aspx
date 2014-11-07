@@ -8,11 +8,11 @@
     <asp:SqlDataSource ID="sql_playerDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:dbo.gbarnard_HW7_Data %>" SelectCommand="SELECT * FROM [gbarnard_HW7_Data]"></asp:SqlDataSource>
     <br />
     <%If Not IsPostBack Then%>
-    Search for a Player by name:&nbsp; &nbsp; &nbsp;
+    Search for a Player or Team by name:&nbsp; &nbsp; &nbsp;
     <asp:TextBox ID="tbSearch" runat="server" Width="180px"></asp:TextBox>
     <%Else%>
     
-    Search for another Player by name:&nbsp; &nbsp; &nbsp;
+    Search for another Player or Team by name:&nbsp; &nbsp; &nbsp;
     <asp:TextBox ID="tbSearch2" runat="server" Width="180px"></asp:TextBox>
     <br />
     <br />

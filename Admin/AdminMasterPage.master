@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" CodeFile="players.master.vb" Inherits="players" %>
+﻿<%@ Master Language="VB" CodeFile="AdminMasterPage.master.vb" Inherits="Admin_AdminMasterPage" %>
 
 <!DOCTYPE html>
 
@@ -8,7 +8,7 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
         </title>
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,16 +21,14 @@
         </div>   
         <div id="right_header">
             <asp:Image ID="img_MLG" runat="server" Height="145px" ImageUrl="~/css/MLGDigitalLogo.jpg" />
-        </div> 
+&nbsp;</div> 
 
         <div id="menu">
             <ul id="nav">
-                <li><asp:HyperLink ID="Link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
-                <li><asp:HyperLink ID="link_About" runat="server" NavigateUrl="~/aboutUs.aspx">About Us</asp:HyperLink></li>
-                <li><asp:HyperLink ID="link_contact" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink></li>
-                <li><asp:HyperLink ID="link_Search" runat="server" NavigateUrl="~/Search.aspx">Search</asp:HyperLink></li>
-                <li><asp:HyperLink ID="link_login" runat="server" NavigateUrl="~/login/login.aspx">Login</asp:HyperLink></li>
-               
+
+                <li><a href="./viewAllPlayers.aspx">View all Players</a></li>
+                <li><a href="./newPlayer.aspx">New Player</a></li>
+                
             </ul>
         </div>
 
@@ -43,9 +41,10 @@
         <div id="footer">
             &copy; 2014 MSCI:3300 - Software Design and Development
         </div>
-
     </div>
-    
     </form>
 </body>
 </html>
+
+
+
