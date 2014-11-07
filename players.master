@@ -18,6 +18,10 @@
             <h1>MLG Stats!</h1>
             <h3>Stats for your favorite Major League Gaming <br />
                 Call of Duty Players</h3>
+            <h3>
+                <asp:Label ID="lbl_time" runat="server"></asp:Label>
+                
+            </h3>
         </div>   
         <div id="right_header">
             <asp:Image ID="img_MLG" runat="server" Height="145px" ImageUrl="~/css/MLGDigitalLogo.jpg" />
